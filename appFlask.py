@@ -67,6 +67,10 @@ def signup():
 
     return jsonify({'message': 'Signup successful'})
 
+@app.route('/ping')
+def ping():
+    return 'Ping successful!'
+
 # Login route
 @app.route('/login', methods=['POST'])
 def login():
